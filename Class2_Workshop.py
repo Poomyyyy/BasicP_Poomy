@@ -10,7 +10,7 @@ elif distance <= 300:
     total = 25
 elif distance <= 500:
     total = 35
-elif distance >= 500:
+elif distance > 500:
     total = 45
 else:
     print("Don't express")

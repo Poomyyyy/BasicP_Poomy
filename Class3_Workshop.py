@@ -1,29 +1,31 @@
-MonstorA = "ไคเซน", 50
+MonstorA = 50
 
-Gun = "ปืน", -30
-Knife = "มีด", -20
-Missile = "มิดซายด์", -100
+Gun = 30
+Knife = 20
+Missile = 100
 
-sum = 0
 while True:
     Home = int(input("ต่อสู้กับมอนเตอร์กด 1 กด 2 เพื่อออก : "))
     if Home == 1:
-        print("จำนวนการตีมอนเตอร์")
-        times = int(input("จำนวนการตี : "))
+        times = int(input("จำนวนการตีมอตเตอร์ : "))
         for i in range(times):
             print("เลือกอาวุธ")
             select_tools = input("1. ปืน 2.มืด, 3. มิดซายด์ : ")
             if select_tools == "1" :
-                sum += -30
+                MonstorA -= Gun
             elif select_tools == "2" :
-                sum += -20
+                MonstorA -= Knife
             elif select_tools == "3" :
-                sum += -100
-        if sum == -50 and -100 :
-            print("คุณชนะ")
-        else:
-            if sum >= 20:
-                print("Test")
+                MonstorA -= Missile
+            else:
+                print("คุณไม่เลือกอาวุธ")
+        if MonstorA == 0:
+            print("มอนเตอร์ตาย")
+            break
+        elif MonstorA < 0:
+            MonstorA = 20
+            print("มอนเตอร์ได้รับเลือดเพิ่ม", MonstorA)
+            
     elif Home == 2:
         break
     else:

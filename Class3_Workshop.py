@@ -19,10 +19,11 @@ while True:
                 sum += -20
             elif select_tools == "3" :
                 sum += -100
-        if sum == -50 :
+        if sum == -50 and -100 :
             print("คุณชนะ")
         else:
-            print("Test")
+            if sum >= 20:
+                print("Test")
     elif Home == 2:
         break
     else:

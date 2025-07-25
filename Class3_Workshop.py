@@ -19,13 +19,16 @@ while True:
                 MonstorA -= Missile
             else:
                 print("คุณไม่เลือกอาวุธ")
-        if MonstorA == 0:
-            print("มอนเตอร์ตาย")
-            break
-        elif MonstorA < 0:
-            MonstorA = 20
-            print("มอนเตอร์ได้รับเลือดเพิ่ม", MonstorA)
-            
+            if MonstorA == 0:
+                print("มอนเตอร์ตาย")
+                break
+            elif MonstorA < 0  :
+                MonstorA = 20
+                print("มอนเตอร์ได้รับเลือดเพิ่ม", MonstorA)
+        if MonstorA > 0:
+            print("END GAME ผู้เล่นตาย")  
+            break 
+        break
     elif Home == 2:
         break
     else:

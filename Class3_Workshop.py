@@ -20,7 +20,7 @@ while True:
             else:
                 print("คุณไม่เลือกอาวุธ")
             if MonstorA == 0:
-                print("มอนเตอร์ตาย")
+                print("มอนเตอร์เสียชีวิต")
                 break
             elif MonstorA < 0  :
                 MonstorA = 20
@@ -29,6 +29,7 @@ while True:
             print("END GAME ผู้เล่นตาย")  
             break 
         break
+        # highlight to "python indentation"
     elif Home == 2:
         break
     else:

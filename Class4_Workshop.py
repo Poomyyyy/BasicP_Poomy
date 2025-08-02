@@ -30,5 +30,6 @@ def buy_tick():
     userinput = input("เลือกลำดับหนัง : ")
     userage = int(input("อายุของคุณ : "))
 #def checkage(userage, age_restriction):
-    #if userage 
+    #if userage
+    #if test
 main()

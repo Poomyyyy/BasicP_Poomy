@@ -10,15 +10,17 @@ movie = [
 def buy_tick():
     show_mov()
     userinput = int(input("เลือกลำดับหนัง"))
-    userage = input("อายุของคุณ : ")
+    userage = int(input("อายุของคุณ : "))
     checkage(userinput, userage)
 
 def checkage(userinput, userage):
-    if movie[userinput - 1]['age_restriction'] == 'G':
-        print("OKKKKK")
-        return
+    sum_age = movie[userinput - 1]["age_restriction"]
+    if sum_age == 'G' :
+        calclateprice()
+    elif sum_age >= userage:
+        calculateprice()
     else:
-        print("KAK")
+        print("Error")
 def show_mov():
     for name_mov in movie :
         print(name_mov["movie_name"])

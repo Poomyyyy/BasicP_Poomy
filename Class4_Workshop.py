@@ -18,7 +18,7 @@ def calculateprice(userinput, userage): #userinput = 5
         Total = movie[userinput - 1]['ticket_price'] + 50
     else:
         Total = movie[userinput - 1]['ticket_price']
-    print("ชื่อหนัง : " + movie[userinput - 1]['movie_name'] +  "\nราคา " + str(Total) + '\n' + movie_sound)
+    print("ชื่อหนัง : " + movie[userinput - 1]['movie_name'] +  "\nราคา : " + str(Total) + '\n' +"ประเภท : " + movie_sound)
 
 def buy_tick():
     show_mov()

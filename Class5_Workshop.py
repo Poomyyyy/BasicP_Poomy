@@ -24,12 +24,9 @@ def main(): #takaa
         add = str(input("สั่งเพิ่มไหม [y/N]"))
         if add == 'N':
             break
-        
+
     print("Odered list\n------------------------------")
     for i in fav:
         print(i)
 
 main()
-
-
-        
